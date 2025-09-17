@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../Contexts/authContext";
+import { useAuth } from "../Contexts/AuthContext";
 import toast from "react-hot-toast";
 import { jwtDecode } from "jwt-decode";
 
