@@ -2,7 +2,7 @@ import Select from "react-select";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useMood } from "../../Contexts/MoodContext";
-import { useAuth } from "../../Contexts/authContext";
+import { useAuth } from "../../Contexts/AuthContext";
 import { Navigate } from "react-router-dom";
 import { useAxiosInstance } from "../../api/axiosInstance";
 import toast from "react-hot-toast";
