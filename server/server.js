@@ -14,7 +14,9 @@ const app = express();
 const PORT = process.env.PORT || 8001;
 
 app.use(cors());
-
+app.get("/", (req, res) => {
+  res.send("Server is live!");
+});
 app.use(express.json());
 app.use(cookieParser());
 app.use("/api/users", require("./routes/userRoutes"));
