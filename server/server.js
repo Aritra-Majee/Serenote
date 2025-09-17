@@ -11,9 +11,14 @@ dotenv.config();
 connectDb();
 const app = express();
 
-const PORT = process.env.PORT || 8001;
+const PORT = 8000;
 
-app.use(cors());
+app.use(cors({
+  origin: "https://serenote-frontend2.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true
+}));
+
 app.get("/", (req, res) => {
   res.send("Server is live!");
 });
