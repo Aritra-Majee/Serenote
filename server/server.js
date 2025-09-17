@@ -14,7 +14,7 @@ const app = express();
 const PORT = 8000;
 
 app.use(cors({
-  origin: "https://serenote-frontend2.vercel.app",
+  origin: "https://serenote-frontend2-git-main-aritra-majees-projects.vercel.app/",
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true
 }));
