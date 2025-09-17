@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import axios from "axios";
 import { useAxiosInstance } from "../api/axiosInstance";
-import { useAuth } from "./authContext";
+import { useAuth } from "./AuthContext";
 
 const MoodContext = createContext();
 
