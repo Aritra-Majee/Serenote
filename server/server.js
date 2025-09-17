@@ -13,14 +13,33 @@ const app = express();
 
 const PORT = 8000;
 
+const allowedOrigins = [
+  "https://serenote-frontend2.vercel.app",   // production frontend
+  "https://serenote-frontend2-git-main-aritra-majees-projects.vercel.app", // preview
+  "http://localhost:5173" // local dev
+];
+
 app.use(cors({
-  origin: "https://serenote-frontend2.vercel.app",
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true
 }));
 
-// Handle preflight explicitly (optional)
-app.options("*", cors());
+// Very important: handle preflight explicitly
+app.options("*", (req, res) => {
+  res.header("Access-Control-Allow-Origin", req.headers.origin);
+  res.header("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
+  res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  res.header("Access-Control-Allow-Credentials", "true");
+  res.sendStatus(200);
+});
+
 
 app.get("/", (req, res) => {
   res.send("Server is live!");
