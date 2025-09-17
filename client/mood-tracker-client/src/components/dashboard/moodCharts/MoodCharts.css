@@ -1,0 +1,60 @@
+/* Offerings Section */
+.offerings-section {
+    padding: 4rem 1rem;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+.mood-offerings-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: left;
+}
+
+.offering-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease;
+}
+
+.offering-card:hover {
+    transform: translateY(-5px);
+}
+
+.offering-number {
+    color: #e91e63;
+    font-weight: 600;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.offering-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #111;
+}
+
+.offering-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+@media (min-width: 768px) {
+    .mood-offerings-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}

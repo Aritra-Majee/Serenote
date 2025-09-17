@@ -1,0 +1,31 @@
+/* Empty */
+.color-empty {
+  fill: #ebedf0;
+}
+
+/* Positive */
+.color-positive-low {
+  fill: #86efac; /* light green */
+}
+.color-positive-high {
+  fill: #22c55e; /* dark green */
+}
+.color-positive-very-high {
+  fill: #028e35; /* dark green */
+}
+
+/* Negative */
+.color-negative-low {
+  fill: #fca5a5; /* light red */
+}
+.color-negative-high {
+  fill: #dc2626; /* dark red */
+}
+.color-negative-very-high {
+  fill: #920505; /* dark red */
+}
+
+/* Neutral */
+.color-neutral {
+  fill: #a5b4fc; /* blueish neutral */
+}
