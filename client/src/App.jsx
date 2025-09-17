@@ -1,16 +1,16 @@
 import { Routes, Route, Outlet } from "react-router-dom"
 import MainLayout from "./layouts/MainLayout"
 import Login from "./pages/Login"
-import Home from "./components/home/Home"
+import Home from "./Components/Home/Home"
 import Register from "./pages/Register"
 import ProtectedRoute from "./layouts/ProtectedRoute"
 import DashboardLayout from "./layouts/DashboardLayout"
-import MoodCharts from "./components/dashboard/moodCharts/MoodCharts"
-import MoodCalendar from "./components/dashboard/moodCalendar/MoodCalendar"
-import MoodTimeline from "./components/dashboard/MoodTimeline"
-import { MoodProvider } from "./contexts/MoodContext"
-import AboutUs from "./components/about/About"
-import ContactUs from "./components/contact/ContactUs"
+import MoodCharts from "./Components/Dashboard/moodCharts/MoodCharts"
+import MoodCalendar from "./Components/Dashboard/moodCalendar/MoodCalendar"
+import MoodTimeline from "./Components/Dashboard/MoodTimeline"
+import { MoodProvider } from "./Contexts/MoodContext"
+import AboutUs from "./Components/About/About"
+import ContactUs from "./Components/Contact/ContactUs"
 import { Toaster } from "react-hot-toast";
 
 

@@ -1,5 +1,5 @@
 import "./Home.css";
-import { useAuth } from "../../contexts/authContext";
+import { useAuth } from "../../Contexts/authContext";
 import { useNavigate } from "react-router-dom";
 import tree  from "../../assets/tree.jpeg"
 

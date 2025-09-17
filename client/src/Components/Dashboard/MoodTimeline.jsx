@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { FaSmile, FaSadTear, FaDotCircle } from "react-icons/fa";
-import { useMood } from "../../contexts/MoodContext";
+import { useMood } from "../../Contexts/MoodContext";
 import Swal from "sweetalert2";
 import axios from "axios";
 import { useAxiosInstance } from "../../api/axiosInstance";

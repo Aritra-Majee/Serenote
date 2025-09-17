@@ -1,5 +1,5 @@
 import "./About.css";
-import { useAuth } from "../../contexts/authContext";
+import { useAuth } from "../../Contexts/authContext";
 import { useNavigate } from "react-router-dom";
 
 export default function AboutUs() {

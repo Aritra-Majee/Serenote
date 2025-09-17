@@ -2,7 +2,7 @@ import { Link, useNavigate, NavLink } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 import { jwtDecode } from "jwt-decode";
-import { useAuth } from "../contexts/authContext";
+import { useAuth } from "../Contexts/authContext";
 import toast from "react-hot-toast";
 import Swal from 'sweetalert2'
 

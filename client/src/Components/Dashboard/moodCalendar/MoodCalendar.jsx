@@ -2,7 +2,7 @@ import CalendarHeatmap from 'react-calendar-heatmap';
 import 'react-calendar-heatmap/dist/styles.css';
 import { Tooltip } from "react-tooltip";
 import "./MoodCalendar.css";
-import { useMood } from "../../../contexts/MoodContext";
+import { useMood } from "../../../Contexts/MoodContext";
 
 function MoodCalendar() {
 

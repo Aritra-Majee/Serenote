@@ -2,7 +2,7 @@ import MoodAreaChart from "./MoodAreaChart";
 import MoodBarChart from "./MoodBarChart";
 import MoodLineChart from "./MoodLineChart";
 import MoodPieChart from "./MoodPieChart";
-import { useMood } from "../../../contexts/MoodContext";
+import { useMood } from "../../../Contexts/MoodContext";
 import "./MoodCharts.css"
 
 function MoodCharts() {
