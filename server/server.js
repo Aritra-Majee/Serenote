@@ -19,6 +19,9 @@ app.use(cors({
   credentials: true
 }));
 
+// Handle preflight explicitly (optional)
+app.options("*", cors());
+
 app.get("/", (req, res) => {
   res.send("Server is live!");
 });
