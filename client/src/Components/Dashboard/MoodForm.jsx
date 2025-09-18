@@ -145,7 +145,7 @@ function MoodForm() {
             color: "white"
         }}>
             <div>
-                <h2 className="mb-1">Hi, Amj 👋</h2>
+                <h2 className="mb-1">Hi</h2>
                 <p className="mb-0">How are you feeling today?</p>
             </div>
 
