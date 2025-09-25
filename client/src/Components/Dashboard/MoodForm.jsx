@@ -82,6 +82,7 @@ function MoodForm() {
 
         if (!mood) {
             toast.error("Please select a mood.");
+            setLoading(false);
             return;
         }
 
