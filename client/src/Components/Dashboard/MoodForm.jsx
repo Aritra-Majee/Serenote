@@ -78,6 +78,7 @@ function MoodForm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true);
 
         if (!mood) {
             toast.error("Please select a mood.");
